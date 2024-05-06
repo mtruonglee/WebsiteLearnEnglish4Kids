@@ -21,9 +21,9 @@ const getComment = async (IdCourse) => {
     } catch (error) { throw error }
 }
 
-const deleteComment = async (Id) => {
+const deleteComment = async (Id, IdCourse) => {
     try {
-        const result = await commentModel.deleteComment(Id)
+        const result = await commentModel.deleteComment(Id, IdCourse)
         return result
     } catch (error) { throw error }
 }

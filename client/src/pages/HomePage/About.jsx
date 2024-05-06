@@ -13,18 +13,18 @@ function Topic() {
                         <Col xs={4} md={4}>
                             <img src="https://i.pinimg.com/originals/98/42/28/984228ab0a3a15bf48642b7fb2b524b2.gif" alt="" />
                         </Col>
-                        <Col xs={4} md={8}>
+                        <Col xs={12} md={8}>
                             <Row>
-                                <Col xs={4} md={12}>
+                                <Col xs={12} md={12}>
                                     <Typography variant='h3' component='h1' pl={5} pb={4} sx={{ fontWeight: 'bold' }}>
                                         Why are us?
                                     </Typography>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col xs={4} md={12}>
+                                <Col xs={12} md={12}>
                                     <Typography variant='h5' component='h1' pl={5} pb={4}>
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like.
+                                    EZ2Learn is a top choice for children&apos;s language education due to its engaging video content covering a wide range of topics. With interactive features and vibrant visuals, the platform offers an immersive learning experience, keeping children focused and motivated. It fosters a supportive environment where children can learn at their own pace and conveniently access the platform anytime, anywhere. Overall, EZ2Learn provides a valuable resource for effective language learning and growth in children.
                                     </Typography>
                                 </Col>
                             </Row>
@@ -35,18 +35,18 @@ function Topic() {
             <Box pb={10} pt={10} sx={{ background: 'linear-gradient(to bottom right, #88d3ce, #6e45e2)' }}>
                 <Container>
                     <Row>
-                        <Col xs={4} md={8}>
+                        <Col xs={12} md={8}>
                             <Row>
-                                <Col xs={4} md={12}>
+                                <Col xs={12} md={12}>
                                     <Typography variant='h3' component='h1' pl={5} pb={4} sx={{ fontWeight: 'bold' }}>
                                         English for children from 6 to 12
                                     </Typography>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col xs={4} md={12}>
+                                <Col xs={12} md={12}>
                                     <Typography variant='h5' component='h1' pl={5} pb={4}>
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like.
+                                    The process of learning English for children aged 6 to 12 is a significant developmental journey, providing them with the opportunity to explore a new language and develop crucial communication skills. At this age, children are developing cognitive abilities and are capable of quickly absorbing information, which makes learning English easier. Integrating creative activities and educational games into the English learning process can stimulate children&apos;s curiosity and interest. A variety of resources and learning methods allow children to approach English from different perspectives, from watching videos and listening to music to participating in group activities and practicing communication. Setting specific learning goals and measuring progress is important, and support and encouragement from family and teachers play a crucial role in fostering children&apos;s English learning journey.
                                     </Typography>
                                 </Col>
                             </Row>

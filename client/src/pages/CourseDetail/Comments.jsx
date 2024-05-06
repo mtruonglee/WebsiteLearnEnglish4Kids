@@ -45,7 +45,7 @@ function Comments() {
 
     const handleDelete = async (id) => {
         if (confirm('Delete this comment?')) {
-            const del = await deleteCommentApi(id)
+            const del = await deleteCommentApi(id, payload)
             if (del) {
                 alert('Success!')
                 if (update === 0) setUpdate(1)

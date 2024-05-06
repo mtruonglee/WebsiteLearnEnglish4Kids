@@ -8,10 +8,7 @@ function Welcome() {
                 Welcome to EZ 2 Learn
             </Typography>
             <Typography variant='h5' component='h1' pl={10} pb={10} pr={10} sx={{ }}>
-                EZ 2 Learn is brought to you by the British Council, the world English teaching experts.
-                We have lots of free online games, songs, stories and activities for children.
-                For parents, we have articles on supporting children in learning English,
-                videos on using English at home and information about English courses for your child.
+            EZ2Learn is an online platform designed for children to learn English through engaging video content covering various common topics. With colorful visuals and interactive features, it provides an immersive learning experience. The curated collection of videos includes popular themes like animals, nature, everyday activities, and storytelling. Children can expand their vocabulary and comprehension skills while enjoying entertaining narratives. EZ2Learn offers a supportive environment for young learners to thrive in their language learning journey.
             </Typography>
         </Box>
     )

@@ -40,9 +40,9 @@ export const getCommentApi = async (id) => {
     return response.data
 }
 
-export const deleteCommentApi = async (id) => {
+export const deleteCommentApi = async (id, payload) => {
     try {
-        const response = await axios.delete(`http://localhost:8017/course/deleteComment/${id}`)
+        const response = await axios.post(`http://localhost:8017/course/deleteComment/${id}`, payload)
         return response.data
     } catch (error) {
         return error

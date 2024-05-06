@@ -12,7 +12,7 @@ router.route('/')
     })
 
 router.route('/deleteComment/:id')
-    .delete(commentController.deleteComment)
+    .post(commentController.deleteComment)
 
 router.route('/get')
     .get(courseController.getCourse)

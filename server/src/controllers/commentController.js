@@ -26,7 +26,7 @@ const getComment = async (req, res, next) => {
 
 const deleteComment = async (req, res, next) => {
     try {
-        const result = await commentService.deleteComment(req.params.id)
+        const result = await commentService.deleteComment(req.params.id, req.body.CourseId)
         res.status(StatusCodes.OK).json(result)
     } catch (error) {
         next(error)

@@ -39,9 +39,9 @@ const getComment = async (IdCourse) => {
     } catch (error) { throw new Error(error) }
 }
 
-const deleteComment = async (Id) => {
+const deleteComment = async (Id, IdCourse) => {
     try {
-        const result = await comment.updateOne({}, { $pull: { comments: { _id: Id } } }, { new: true })
+        const result = await comment.updateOne({IdCourse}, { $pull: { comments: { _id: Id } } }, { new: true })
         return result
     } catch (error) { throw new Error(error) }
 }
