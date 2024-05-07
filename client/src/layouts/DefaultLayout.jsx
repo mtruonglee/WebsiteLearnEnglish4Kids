@@ -33,14 +33,14 @@ function DefaultLayout() {
         <>
             <Navbar expand="lg" className="" style={{ background: 'linear-gradient(to right, #ff7e5f, #feb47b)' }} fixed='top'>
                 <Container fluid>
-                    <Navbar.Brand style={{ cursor: 'pointer' }} onClick={() => navigate('/')}>EZ2Learn</Navbar.Brand>
+                    <Navbar.Brand style={{ cursor: 'pointer' }} href='/'>EZ2Learn</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
                             className="me-auto my-2 my-lg-0"
                             navbarScroll
                         >
-                            <Nav.Link style={{ margin: '0 10px' }} onClick={() => navigate('/')}>Home</Nav.Link>
+                            <Nav.Link style={{ margin: '0 10px' }} href='/'>Home</Nav.Link>
                             <Nav.Link onClick={() => navigate('/courses')}>Courses</Nav.Link>
                             <Nav.Link style={{ margin: '0 10px' }} onClick={() => navigate('/game')}>Game</Nav.Link>
                             {
@@ -48,8 +48,8 @@ function DefaultLayout() {
                                 &&
                                 <NavDropdown title='My Courses' id="navbarScrollingDropdown">
                                     {
-                                        data.IdCourses &&
-                                        data.IdCourses.map((item, index) => {
+                                        data?.IdCourses &&
+                                        data?.IdCourses.map((item, index) => {
                                             return (
                                                 <NavDropdown.Item key={index} onClick={() => navigate(`/learning/${item._id}`)}>
                                                     {item.name} - {item.author}

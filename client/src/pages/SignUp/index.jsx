@@ -8,6 +8,7 @@ import { createUserApi } from '../../apis/index.js'
 function SignUp() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [rePassword, setRePassword] = useState('')
     const [name, setName] = useState('')
     const [tel, setTel] = useState('')
     const payload = {
@@ -17,8 +18,15 @@ function SignUp() {
         tel
     }
 
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+
     const handleCreateUser = async () => {
-        await createUserApi(payload)
+        if (!isValidEmail)
+            alert('Invalid Email')
+        else if (password != rePassword)
+            alert('Password and Retype Password do not match')
+        else
+            await createUserApi(payload)
     }
 
     return (
@@ -36,10 +44,11 @@ function SignUp() {
                 noValidate
                 autoComplete="off"
             >
-                <TextField id="outlined-basic-1" label="Email" variant="outlined" onChange={(e) => setEmail(e.target.value)} />
-                <TextField id="outlined-basic-2" label="Password" variant="outlined" type='password' onChange={(e) => setPassword(e.target.value)} />
-                <TextField id="outlined-basic-3" label="Name" variant="outlined" onChange={(e) => setName(e.target.value)} />
-                <TextField id="outlined-basic-4" label="Tel" variant="outlined" onChange={(e) => setTel(e.target.value)} />
+                <TextField type="email" id="outlined-basic-1" label="Email" variant="outlined" onChange={(e) => setEmail(e.target.value)} required />
+                <TextField id="outlined-basic-2" label="Password" variant="outlined" type='password' onChange={(e) => setPassword(e.target.value)} required />
+                <TextField id="outlined-basic-2" label="Retype Password" variant="outlined" type='password' onChange={(e) => setRePassword(e.target.value)} required />
+                <TextField id="outlined-basic-3" label="Name" variant="outlined" onChange={(e) => setName(e.target.value)} required />
+                <TextField id="outlined-basic-4" label="Tel" variant="outlined" onChange={(e) => setTel(e.target.value)} required />
                 <Button variant="contained" onClick={handleCreateUser}>Sign Up</Button>
             </Box>
             <Box sx={{ textAlign: 'center' }}>
