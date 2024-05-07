@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import ListGroup from 'react-bootstrap/ListGroup'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { fetchCourseByIdApi } from '../apis/index.js'
 
@@ -22,9 +22,10 @@ function LearningPage() {
     }, [CourseId])
 
     return (
-        <Box pt={12} pb={5} sx={{ backgroundColor: '#FFF2E5' }}>
+        <Box pt={10} pb={5} sx={{ backgroundColor: '#FFF2E5' }}>
             <Container fluid>
                 <Row>
+                    <Link to={`/courses/${CourseId}`}><p>Go Back &gt;&gt;</p></Link>
                     <Col xs={12} md={8}>
                         <iframe
                             width="100%"

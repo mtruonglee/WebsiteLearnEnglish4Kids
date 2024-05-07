@@ -52,7 +52,7 @@ function DefaultLayout() {
                                         data?.IdCourses.map((item, index) => {
                                             return (
                                                 <NavDropdown.Item key={index} onClick={() => navigate(`/learning/${item._id}`)}>
-                                                    {item.name} - {item.author}
+                                                    {index+1}. {item.name} - {item.author}
                                                 </NavDropdown.Item>
                                             )
                                         })
@@ -76,10 +76,9 @@ function DefaultLayout() {
                                         </NavDropdown.Item>
                                     }
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item onClick={() => {
+                                    <NavDropdown.Item href='/' onClick={() => {
                                         localStorage.clear()
                                         dispatch(deleteUserData())
-                                        navigate('/')
                                     }}>
                                         Sign Out
                                     </NavDropdown.Item>

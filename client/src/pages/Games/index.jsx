@@ -111,7 +111,7 @@ function GamePage() {
                         }
                     </Box>
                     <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                        <TextField id="outlined-basic" label="Answer" variant="outlined" autoFocus sx={{ width: '50%' }} onKeyDown={handleKeyPress} />
+                        <TextField id="outlined-basic" label="Answer" variant="outlined" autoFocus sx={{ width: '50%' }} autoComplete="off" onKeyDown={handleKeyPress} />
                         <Button
                             variant="contained"
                             onClick={handleScore}
@@ -168,7 +168,7 @@ function GamePage() {
                                 <ButtonBT style={{ width: '100%' }} variant='warning' onClick={() => setMode('Job')}>Job</ButtonBT>
                             </Col>
                             <Col md={6} style={{ marginBottom: '20px' }}>
-                                <ButtonBT style={{ width: '100%' }} variant='warning' onClick={() => setMode('School & School supplies')}>School & School supplies</ButtonBT>
+                                <ButtonBT style={{ width: '100%' }} variant='warning' onClick={() => setMode('School')}>School & School supplies</ButtonBT>
                             </Col>
                             <Col md={6} style={{ marginBottom: '20px' }}>
                                 <ButtonBT style={{ width: '100%' }} variant='warning' onClick={() => setMode('Shapes')}>Shapes</ButtonBT>
