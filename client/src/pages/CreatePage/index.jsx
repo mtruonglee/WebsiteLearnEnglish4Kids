@@ -74,6 +74,7 @@ function CreatePage() {
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Image</Form.Label>
                         <Form.Control type="text" placeholder="" onChange={(e) => { setImg(e.target.value) }} />
+                        <img src={img} alt="Course image" style={{ width: '200px', height: '100px', marginTop: '10px', objectFit: 'cover' }} />
                     </Form.Group>
 
                     <p style={{ fontWeight: 'bold', fontSize: '25px' }}>Lesson</p>
@@ -96,8 +97,8 @@ function CreatePage() {
                         )
                     }
                     <div style={{ display: 'flex', color: 'red', fontWeight: 'bold' }}>
-                        <p onClick={handleAddLesson} style={{ marginRight: '20px' }}>Add lesson +</p>
-                        <p onClick={handleRemoveLesson}>Remove lesson -</p>
+                        <p onClick={handleAddLesson} style={{ marginRight: '20px', cursor: 'pointer' }}>Add lesson +</p>
+                        <p onClick={handleRemoveLesson} style={{ cursor: 'pointer' }}>Remove lesson -</p>
                     </div>
                     <Button variant="success" type="button" onClick={handleCreate}>
                         Create

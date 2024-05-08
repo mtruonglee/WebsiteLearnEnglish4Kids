@@ -43,7 +43,7 @@ function CoursesPage() {
                             <ListGroup.Item key={14} onClick={() => setState('Weather')} active={state === 'Weather'}>Weather</ListGroup.Item>
                         </ListGroup>
                     </Col>
-                    <Col md={9}>
+                    <Col md={9} style={{ height: '700px', overflow: 'auto' }}>
                         <h2 style={{ fontWeight: 'bold' }}>Courses</h2>
                         <Row>
                             {
