@@ -26,6 +26,7 @@ function UserManage() {
                         return (
                             <Col md={12} key={index}>
                                 <Card body>
+                                    No. {index + 1} <br />
                                     Name: {item.name} <br />
                                     Email: {item.email} <br />
                                     Created At: {item.createdAt}
