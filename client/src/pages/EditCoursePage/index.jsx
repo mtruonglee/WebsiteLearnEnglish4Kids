@@ -44,6 +44,7 @@ function EditCoursePage() {
             setImg(data.img)
             setLesson(data.lesson)
         })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const handleAddLesson = () => {
